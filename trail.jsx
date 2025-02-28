@@ -681,7 +681,9 @@ function Sidebar() {
 				) : (
 					<>
 						<Avatar small={true} />
-						<Box ml={theme.spacing(2)}>
+						<Box ml={theme.spacing(2)}
+							sx={{ maxWidth: "50%", overflow: "hidden" }}
+						>
 							<Typography
 								component="span"
 								fontWeight={500}
@@ -789,8 +791,9 @@ function Sidebar() {
 
 
 					{collapsed && (
-						<MenuItem sx={{ cursor: "default", minWidth: "150px" }}>
-							<Box mb={theme.spacing(2)}>
+						<MenuItem sx={{ cursor: "default", minWidth: "50%" }}>
+							<Box mb={theme.spacing(2)}
+							sx={{ maxWidth: "50%", overflow: "hidden" }}>
 								<Typography
 									component="span"
 									fontWeight={500}
