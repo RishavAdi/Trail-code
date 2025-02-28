@@ -687,6 +687,12 @@ function Sidebar() {
 							<Typography
 								component="span"
 								fontWeight={500}
+								sx={{
+									display: "block",
+									whiteSpace: "nowrap",
+									overflow: "hidden",
+									textOverflow: "ellipsis",
+								}}
 							>
 								{authState.user?.firstName} {authState.user?.lastName}
 							</Typography>
@@ -798,6 +804,12 @@ function Sidebar() {
 									component="span"
 									fontWeight={500}
 									fontSize={13}
+									sx={{
+										display: "block",
+										whiteSpace: "nowrap",
+										overflow: "hidden",
+										textOverflow: "ellipsis",
+									}}
 								>
 									{authState.user?.firstName} {authState.user?.lastName}
 								</Typography>
